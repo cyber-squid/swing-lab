@@ -10,7 +10,7 @@ public class Grappler : MonoBehaviour
     public Transform gunTip, camera, player;
     private SpringJoint joint;
     private Vector3 currentGrapplePosition;
-    private float maxDistance = 10f;
+    private float maxDistance = 100f;
 
     void Awake()
     {
