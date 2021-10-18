@@ -12628,7 +12628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee093724d956b514cb8316479973ced0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grappleObjects:
+  whatIsGrappleable:
     serializedVersion: 2
     m_Bits: 4294967295
   gunTip: {fileID: 697921482}
@@ -15254,6 +15254,7 @@ GameObject:
   - component: {fileID: 1169912217}
   - component: {fileID: 1169912218}
   - component: {fileID: 1169912219}
+  - component: {fileID: 1169912220}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -15333,6 +15334,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CheckPointMark: {fileID: 1618305545}
+--- !u!54 &1169912220
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169912215}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 72
+  m_CollisionDetection: 0
 --- !u!1 &1175573570
 GameObject:
   m_ObjectHideFlags: 0
