@@ -25,7 +25,7 @@ public class PlayerCheckPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("CheckPoint"))
+        if (other.gameObject.CompareTag("Player"))
         {
             spawnPoint = CheckPointMark.transform.position;
             Destroy(CheckPointMark);
