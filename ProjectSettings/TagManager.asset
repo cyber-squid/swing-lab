@@ -5,12 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - CheckPoint
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Grapple
   - Water
   - UI
   - Ground

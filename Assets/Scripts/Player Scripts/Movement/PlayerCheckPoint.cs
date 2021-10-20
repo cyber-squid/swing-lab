@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerCheckPoint : MonoBehaviour
 {
 
-    public GameObject CheckPointMark;
+  //  public GameObject CheckPointMark;
     Vector3 spawnPoint;
 
     // Start is called before the first frame update
@@ -25,10 +25,10 @@ public class PlayerCheckPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Checkpoint"))
         {
-            spawnPoint = CheckPointMark.transform.position;
-            Destroy(CheckPointMark);
+            spawnPoint = other.gameObject.transform.position;
+            Destroy(other.gameObject);
         }
     }
 }
