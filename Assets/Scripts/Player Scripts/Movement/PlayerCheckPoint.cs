@@ -5,12 +5,15 @@ using UnityEngine;
 public class PlayerCheckPoint : MonoBehaviour
 {
 
-  //  public GameObject CheckPointMark;
+    //  public GameObject CheckPointMark;
+    public Transform levelposition;
     Vector3 spawnPoint;
 
+    private AIFollow aIFollow;
     // Start is called before the first frame update
     void Start()
     {
+        aIFollow = FindObjectOfType<AIFollow>();
         spawnPoint = gameObject.transform.position;
     }
 
@@ -27,6 +30,9 @@ public class PlayerCheckPoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Checkpoint"))
         {
+            aIFollow.follow = false;
+            aIFollow.goTolevelposition = true;
+            aIFollow.targetposition = levelposition.position;
             spawnPoint = other.gameObject.transform.position;
             Destroy(other.gameObject);
         }

@@ -18,7 +18,7 @@ public class DoorOpen : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider Player)
     {
-        if (Player.tag == "Player")
+        if (Player.tag == "Player" || Player.tag == "AI")
         {
             Hinge.Play();
             audio = GetComponent<AudioSource>();

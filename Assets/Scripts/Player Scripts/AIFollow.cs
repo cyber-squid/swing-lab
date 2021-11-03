@@ -7,30 +7,40 @@ public class AIFollow : MonoBehaviour
     public GameObject Player;
     public float TargetDistance;
     public float AllowedDistance;
+    public float toofar = 7;
+    public bool follow = true;
+    public bool goTolevelposition = false;
+    private bool hasFollowed;
     public GameObject PetAI;
     public float followSpeed;
-    public RaycastHit shot;
-
-
-    // Update is called once per frame
+    public Vector3 targetposition;
+    void Start()
+    {
+        follow = true;
+    }
     void Update()
     {
         transform.LookAt(Player.transform);
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shot))
+        if (follow)
         {
-            TargetDistance = shot.distance;
-            if (TargetDistance >= AllowedDistance)
+            TargetDistance = Vector3.Distance(Player.transform.position, this.transform.position);
+            if (TargetDistance < AllowedDistance)
             {
-                followSpeed = 0.5f;
-                //PetAI.GetComponent<Animation>().Play("flying");
-                transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, followSpeed);
+                Move(Player.transform.position);
+                hasFollowed = true;
             }
-            else
+            if (hasFollowed && TargetDistance > toofar)
             {
-                followSpeed = 0;
-                //PetAI.GetComponent<Animation>().Play("idle");
+                transform.position = Player.transform.position + new Vector3(0, 0, 1);
             }
         }
-        
+        else if(goTolevelposition)
+        {
+            Move(targetposition);
+        }
+    }
+    public void Move(Vector3 target)
+    {
+        transform.position = Vector3.MoveTowards(transform.position, target + new Vector3(0, 0, 2), followSpeed * Time.deltaTime);
     }
 }
