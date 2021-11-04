@@ -7,13 +7,16 @@ public class PlayerCheckPoint : MonoBehaviour
 
     public GrapplingHookL GrappleL;
     public GrapplingHookR GrappleR;
+    private AIFollow aIFollow;
+    public Transform levelposition;
 
-  //  public GameObject CheckPointMark;
+    //  public GameObject CheckPointMark;
     Vector3 spawnPoint;
 
     // Start is called before the first frame update
     void Start()
     {
+        aIFollow = FindObjectOfType<AIFollow>();
         spawnPoint = gameObject.transform.position;
         GrappleL = GetComponentInChildren<GrapplingHookL>();
         GrappleR = GetComponentInChildren<GrapplingHookR>();
@@ -34,6 +37,9 @@ public class PlayerCheckPoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Checkpoint"))
         {
+            aIFollow.follow = false;
+            aIFollow.goTolevelposition = true;
+            aIFollow.targetposition = levelposition.position;
             spawnPoint = other.gameObject.transform.position;
             Destroy(other.gameObject);
         }
