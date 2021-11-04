@@ -3869,8 +3869,6 @@ MonoBehaviour:
 
     Crouch = Ctrl
 
-    Look = Mouse
-
     Grappling
     Hook = Left Click / Right Click
 
@@ -5390,7 +5388,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 125
+  field of view: 100
   orthographic: 0
   orthographic size: 5
   m_Depth: 0

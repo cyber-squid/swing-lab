@@ -5,16 +5,18 @@ using UnityEngine;
 public class PlayerCheckPoint : MonoBehaviour
 {
 
-    //  public GameObject CheckPointMark;
-    public Transform levelposition;
+    public GrapplingHookL GrappleL;
+    public GrapplingHookR GrappleR;
+
+  //  public GameObject CheckPointMark;
     Vector3 spawnPoint;
 
-    private AIFollow aIFollow;
     // Start is called before the first frame update
     void Start()
     {
-        aIFollow = FindObjectOfType<AIFollow>();
         spawnPoint = gameObject.transform.position;
+        GrappleL = GetComponentInChildren<GrapplingHookL>();
+        GrappleR = GetComponentInChildren<GrapplingHookR>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,8 @@ public class PlayerCheckPoint : MonoBehaviour
         if (gameObject.transform.position.y < -20f)
         {
             gameObject.transform.position = spawnPoint;
+            GrappleL.StopGrapple();
+            GrappleR.StopGrapple();
         }
     }
 
@@ -30,9 +34,6 @@ public class PlayerCheckPoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Checkpoint"))
         {
-            aIFollow.follow = false;
-            aIFollow.goTolevelposition = true;
-            aIFollow.targetposition = levelposition.position;
             spawnPoint = other.gameObject.transform.position;
             Destroy(other.gameObject);
         }
