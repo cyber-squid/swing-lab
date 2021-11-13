@@ -20,7 +20,7 @@ public class LevelPortalOne : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
-            collider.transform.position = new Vector3(-359.1363f, 1.314306f, -493.3212f);
+            collider.transform.position = new Vector3(-359.1363f, 2f, -493.3212f);
         }
     }
 }

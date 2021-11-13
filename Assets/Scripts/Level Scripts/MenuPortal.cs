@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class LevelPortalTwo : MonoBehaviour
+
+public class LevelPortalThree : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,7 @@ public class LevelPortalTwo : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
-            collider.transform.position = new Vector3(-140.2f, 264f, -899.9937f);
+            SceneManager.LoadScene("Main Menu");
         }
     }
 }
