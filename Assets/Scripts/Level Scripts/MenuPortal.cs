@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class LevelPortalThree : MonoBehaviour
+public class MenuPortal : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
