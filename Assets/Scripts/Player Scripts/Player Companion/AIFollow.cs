@@ -20,9 +20,9 @@ public class AIFollow : MonoBehaviour
     }
     void Update()
     {
-        transform.LookAt(Player.transform);
         if (follow)
         {
+            transform.LookAt(Player.transform);
             TargetDistance = Vector3.Distance(Player.transform.position, this.transform.position);
             if (TargetDistance < AllowedDistance)
             {
@@ -36,7 +36,7 @@ public class AIFollow : MonoBehaviour
         }
         else if(goTolevelposition)
         {
-            Move(targetposition);
+            transform.position = targetposition;
         }
     }
     public void Move(Vector3 target)
