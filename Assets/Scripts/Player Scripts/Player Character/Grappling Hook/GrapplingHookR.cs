@@ -13,6 +13,8 @@ public class GrapplingHookR : MonoBehaviour
     private float maxDistance = 100f;
     private SpringJoint joint;
 
+    public AudioSource GrapplingHookSound;
+
     void Awake()
     {
         lr = GetComponent<LineRenderer>();
@@ -62,6 +64,8 @@ public class GrapplingHookR : MonoBehaviour
 
             lr.positionCount = 2;
             currentGrapplePosition = gunTip.position;
+
+            GrapplingHookSound.Play();
         }
     }
 

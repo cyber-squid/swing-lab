@@ -12,6 +12,8 @@ public class PlayerCheckPoint : MonoBehaviour
     //public GameObject CheckPointMark;
     Vector3 spawnPoint;
 
+    public AudioSource CheckpointSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,7 @@ public class PlayerCheckPoint : MonoBehaviour
             aIFollow.goTolevelposition = true;
             aIFollow.targetposition = levelposition.position;
             spawnPoint = other.gameObject.transform.position;
+            CheckpointSound.Play();
             Destroy(other.gameObject);
         }
     }
