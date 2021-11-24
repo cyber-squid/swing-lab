@@ -3,32 +3,48 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class GrapplingHookR : MonoBehaviour
+public class GrapplingHook : MonoBehaviour
 {
-
+    public bool isRight;
     private LineRenderer lr;
     private Vector3 grapplePoint;
     public LayerMask whatIsGrappleable;
-    public Transform gunTip, camera, player;
+    private Transform player;
     private float maxDistance = 100f;
     private SpringJoint joint;
-
-    public AudioSource GrapplingHookSound;
+    public Transform gunTip, camera;
+    private AudioSource GrapplingHookSound;
 
     void Awake()
     {
         lr = GetComponent<LineRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        GrapplingHookSound = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (!isRight)
         {
-            StartGrapple();
+            if (Input.GetMouseButtonDown(0))
+            {
+                StartGrapple();
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                StopGrapple();
+            }
         }
-        else if (Input.GetMouseButtonUp(1))
+        else
         {
-            StopGrapple();
+            if (Input.GetMouseButtonDown(1))
+            {
+                StartGrapple();
+            }
+            else if (Input.GetMouseButtonUp(1))
+            {
+                StopGrapple();
+            }
         }
     }
 

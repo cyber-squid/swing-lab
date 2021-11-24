@@ -4,46 +4,40 @@ using UnityEngine;
 
 public class PlayerCheckPoint : MonoBehaviour
 {
-    public GrapplingHookL GrappleL;
-    public GrapplingHookR GrappleR;
     private AIFollow aIFollow;
     public Transform levelposition;
-
-    //public GameObject CheckPointMark;
+    public bool followPlayer;
     Vector3 spawnPoint;
-
+    private PlayerMovementController pmc;
     public AudioSource CheckpointSound;
 
     // Start is called before the first frame update
     void Start()
     {
+        pmc = FindObjectOfType<PlayerMovementController>();
         aIFollow = FindObjectOfType<AIFollow>();
         spawnPoint = gameObject.transform.position;
-        GrappleL = GetComponentInChildren<GrapplingHookL>();
-        GrappleR = GetComponentInChildren<GrapplingHookR>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (gameObject.transform.position.y < -20f)
-        {
-            gameObject.transform.position = spawnPoint;
-            GrappleL.StopGrapple();
-            GrappleR.StopGrapple();
-        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Checkpoint"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            aIFollow.follow = false;
-            aIFollow.goTolevelposition = true;
-            aIFollow.targetposition = levelposition.position;
-            spawnPoint = other.gameObject.transform.position;
+            pmc.spawnPoint = spawnPoint;
             CheckpointSound.Play();
-            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+            if (followPlayer)
+            {
+                aIFollow.follow = true;
+                aIFollow.goTolevelposition = false;
+
+            }
+            else
+            {
+                aIFollow.follow = false;
+                aIFollow.goTolevelposition = true;
+                aIFollow.targetposition = levelposition.position;
+            }
         }
     }
 }

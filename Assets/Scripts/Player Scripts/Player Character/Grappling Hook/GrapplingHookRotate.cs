@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrapplingHookRRotate : MonoBehaviour
+public class GrapplingHookRotate : MonoBehaviour
 {
 
-    public GrapplingHookR grapplingR;
+    public GrapplingHook grapplingHook;
 
     private Quaternion desiredRotation;
     private float rotationSpeed = 5f;
 
     void Update()
     {
-        if (!grapplingR.IsGrappling())
+        if (!grapplingHook.IsGrappling())
         {
             desiredRotation = transform.parent.rotation;
         }
         else
         {
-            desiredRotation = Quaternion.LookRotation(grapplingR.GetGrapplePoint() - transform.position);
+            desiredRotation = Quaternion.LookRotation(grapplingHook.GetGrapplePoint() - transform.position);
         }
 
         transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotation, Time.deltaTime * rotationSpeed);

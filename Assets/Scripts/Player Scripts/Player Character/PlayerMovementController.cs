@@ -45,9 +45,14 @@ public class PlayerMovementController : MonoBehaviour
     private Vector3 normalVector = Vector3.up;
     private Vector3 wallNormalVector;
 
+    //graple
+    private GameObject[] grapplingHooks;
+    public Vector3 spawnPoint;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        grapplingHooks = GameObject.FindGameObjectsWithTag("Grapple");
     }
 
     void Start()
@@ -67,6 +72,11 @@ public class PlayerMovementController : MonoBehaviour
     {
         MyInput();
         Look();
+        if (transform.position.y < -20f)
+        {
+            gameObject.transform.position = spawnPoint;
+            ResetGrapple();
+        }
     }
 
     /// <summary>
@@ -292,6 +302,14 @@ public class PlayerMovementController : MonoBehaviour
     private void StopGrounded()
     {
         grounded = false;
+    }
+
+    public void ResetGrapple()
+    {
+        for (int i = 0; i < grapplingHooks.Length; i++)
+        {
+            grapplingHooks[i].GetComponent<GrapplingHook>().StopGrapple();
+        }
     }
 
 }
