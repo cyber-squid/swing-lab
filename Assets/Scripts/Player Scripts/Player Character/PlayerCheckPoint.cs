@@ -38,12 +38,12 @@ public class PlayerCheckPoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Checkpoint"))
         {
-            aIFollow.follow = false;
-            aIFollow.goTolevelposition = true;
-            aIFollow.targetposition = levelposition.position;
             spawnPoint = other.gameObject.transform.position;
             CheckpointSound.Play();
             Destroy(other.gameObject);
+            aIFollow.follow = false;
+            aIFollow.goTolevelposition = true;
+            aIFollow.targetposition = levelposition.position;
         }
     }
 }
