@@ -30,7 +30,6 @@ public class PlayerCheckPoint : MonoBehaviour
             {
                 aIFollow.follow = true;
                 aIFollow.goTolevelposition = false;
-
             }
             else
             {
