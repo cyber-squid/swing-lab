@@ -41,6 +41,6 @@ public class AIFollow : MonoBehaviour
     }
     public void Move(Vector3 target)
     {
-        transform.position = Vector3.MoveTowards(transform.position, target + new Vector3(0, 0, 2), followSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target + new Vector3(0, 0, 4), followSpeed * Time.deltaTime);
     }
 }

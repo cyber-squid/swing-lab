@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameToTutorialGreyboxPortal" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\Level Greyboxing Scripts\GameToTutorialGreyboxPortal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TutorialToGameGreyboxPortal">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\Level Greyboxing Scripts\TutorialToGameGreyboxPortal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioDisable">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAACAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\AudioDisable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioEnable">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAACAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\AudioEnable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CanvasTrigger">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\CanvasTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoorOpen">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAABAAAAAAACQAAAAAACAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\DoorOpen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameToTutorialPortal">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\GameToTutorialPortal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelPortalOne">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\LevelPortalOne.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelPortalThree">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\LevelPortalThree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelPortalTwo">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\LevelPortalTwo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuPortal">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\MenuPortal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShowUI">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\ShowUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TutorialToGamePortal">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\TutorialToGamePortal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextAppearTrigger">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAEAAAAAAIAAQCCACAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\TextAppearTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VoiceTrigger">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAABAAAEAAAAQAIAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Level Scripts\VoiceTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\Menu Scripts\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SetMouseCursorVisible">
+    <Position X="11.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Menu Scripts\SetMouseCursorVisible.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseMenu">
+    <Position X="13.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAhAACAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Scripts\Menu Scripts\PauseMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuPause">
+    <Position X="11.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAhAACAAAAAAAAAAEAAAAAEAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Scripts\Menu Scripts\MenuPause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMovementController">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQRMAwEMyADRAUUZwCEAAIQAAASgGgAAgBgAIIAAMA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Player Character\PlayerMovementController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrapplingHook">
+    <Position X="23" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQQQAgAAAAgAAAAAIAACABBAAAAJQEIACAAQAEQ=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Player Character\Grappling Hook\GrapplingHook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrapplingHookRotate">
+    <Position X="16" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAACQAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Player Character\Grappling Hook\GrapplingHookRotate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Footsteps">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Player Character\Footsteps.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoveCamera">
+    <Position X="23" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Player Character\MoveCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerCheckPoint">
+    <Position X="16" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAsAAAAAAAAAAAQAAAAAAAAQACAAIAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Player Character\PlayerCheckPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIFollow">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAABKAAAADAAAAAAAAAAAAAAAAIAAAEAQIAABA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Player Companion\AIFollow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelFinished">
+    <Position X="17.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAQACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player Scripts\Player Companion\LevelFinished.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
