@@ -3592,7 +3592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1657416647}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &296055379
 GameObject:
   m_ObjectHideFlags: 0
@@ -5606,7 +5606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1425945603}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &530587308
 GameObject:
   m_ObjectHideFlags: 0
@@ -6108,7 +6108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 778831347}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &590376967
 GameObject:
   m_ObjectHideFlags: 0
@@ -6637,7 +6637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 2024921806}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &609342398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6909,7 +6909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 449696538}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &610704514
 GameObject:
   m_ObjectHideFlags: 0
@@ -8039,7 +8039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 919880074}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &733398701
 GameObject:
   m_ObjectHideFlags: 0
@@ -8953,7 +8953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1744822099}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &799281316
 GameObject:
   m_ObjectHideFlags: 0
@@ -17008,7 +17008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1366284825}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &1195671230
 GameObject:
   m_ObjectHideFlags: 0
@@ -17856,7 +17856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1529570658}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &1342229809
 GameObject:
   m_ObjectHideFlags: 0
@@ -19151,7 +19151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1391595251}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &1454057012
 GameObject:
   m_ObjectHideFlags: 0
@@ -20704,7 +20704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 168361511}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &1623499429
 GameObject:
   m_ObjectHideFlags: 0
@@ -27525,6 +27525,16 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1841821406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9024367863846118060, guid: d3a49259a8a5fbe4a826787222806610, type: 3}
+  m_PrefabInstance: {fileID: 3971668331160307127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1841821407 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9131941688484794307, guid: d3a49259a8a5fbe4a826787222806610, type: 3}
+  m_PrefabInstance: {fileID: 3971668331160307127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1850393231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28422,7 +28432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 2006820485}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 1841821407}
 --- !u!1 &1921330204
 GameObject:
   m_ObjectHideFlags: 0
@@ -31390,7 +31400,7 @@ PrefabInstance:
     - target: {fileID: 798326480190585675, guid: 81cfc997b90ec4147a71fe253af28709, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1841821406}
     - target: {fileID: 798326480190585675, guid: 81cfc997b90ec4147a71fe253af28709, type: 3}
       propertyPath: followSpeed
       value: 15
@@ -37023,7 +37033,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9024367863846118060, guid: d3a49259a8a5fbe4a826787222806610, type: 3}
       propertyPath: m_Name
-      value: PlayerCharacterController (New)
+      value: PlayerCharacterController
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024367863846118060, guid: d3a49259a8a5fbe4a826787222806610, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3a49259a8a5fbe4a826787222806610, type: 3}

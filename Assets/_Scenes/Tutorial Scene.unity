@@ -744,6 +744,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 798326480190585675, guid: 81cfc997b90ec4147a71fe253af28709, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 932999366755323294, guid: 81cfc997b90ec4147a71fe253af28709, type: 3}
       propertyPath: m_Name
       value: PlayerCompanion
@@ -4270,7 +4274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1393758521}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 648385734}
 --- !u!1 &310054940
 GameObject:
   m_ObjectHideFlags: 0
@@ -10926,7 +10930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1806671345}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 648385734}
 --- !u!1 &461258095
 GameObject:
   m_ObjectHideFlags: 0
@@ -18614,10 +18618,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9024367863846118060, guid: d3a49259a8a5fbe4a826787222806610, type: 3}
       propertyPath: m_Name
-      value: PlayerCharacterController (New)
+      value: PlayerCharacterController
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3a49259a8a5fbe4a826787222806610, type: 3}
+--- !u!82 &648385734 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9131941688484794307, guid: d3a49259a8a5fbe4a826787222806610, type: 3}
+  m_PrefabInstance: {fileID: 648385733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &657716741
 GameObject:
   m_ObjectHideFlags: 0
@@ -20218,7 +20227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 235748662}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 648385734}
 --- !u!65 &762452409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21341,7 +21350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1991358133}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 648385734}
 --- !u!1 &813713904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -103751275090472131, guid: 8743a0724468e8446a18e602f729aaf8, type: 3}
@@ -45054,7 +45063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelposition: {fileID: 1101874724}
   followPlayer: 0
-  CheckpointSound: {fileID: 0}
+  CheckpointSound: {fileID: 648385734}
 --- !u!1 &1621852693
 GameObject:
   m_ObjectHideFlags: 0
@@ -48073,7 +48082,7 @@ Transform:
   - {fileID: 380074656}
   - {fileID: 680183236}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1794474003
 GameObject:
@@ -73356,7 +73365,7 @@ Transform:
   - {fileID: 83855479}
   - {fileID: 6185937851016068530}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!4 &6185937851016068540
 Transform:
