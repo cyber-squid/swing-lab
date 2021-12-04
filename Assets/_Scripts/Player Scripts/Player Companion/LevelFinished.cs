@@ -7,7 +7,6 @@ public class LevelFinished : MonoBehaviour
     private AIFollow aIFollow;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         aIFollow = FindObjectOfType<AIFollow>();
