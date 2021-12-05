@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class VolumeSlider : MonoBehaviour
 {
     Slider slider;
-    void Awake() {
+    void Awake() 
+    {
         slider = GetComponent<Slider>();
     }
 
