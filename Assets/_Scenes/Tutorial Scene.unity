@@ -1920,7 +1920,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -62093,8 +62093,8 @@ RectTransform:
   m_Father: {fileID: 220421214}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -62251,7 +62251,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -70}
-  m_SizeDelta: {x: 195.515, y: 20}
+  m_SizeDelta: {x: 157, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!4 &23025713000045936
 Transform:
@@ -64628,7 +64628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &1485410204768755636
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -69115,7 +69115,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -40}
-  m_SizeDelta: {x: 195.515, y: 20}
+  m_SizeDelta: {x: 183, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &3358176766382362893
 GameObject:
@@ -70289,7 +70289,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -100}
-  m_SizeDelta: {x: 195.515, y: 20}
+  m_SizeDelta: {x: 147, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &3868250598349571464
 CanvasRenderer:
@@ -70337,7 +70337,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -10}
-  m_SizeDelta: {x: 195.51514, y: 20}
+  m_SizeDelta: {x: 194, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &3960989457016394264
 GameObject:
@@ -77024,7 +77024,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -130}
-  m_SizeDelta: {x: 195.515, y: 20}
+  m_SizeDelta: {x: 134, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!64 &6714109238127632856
 MeshCollider:
@@ -86461,7 +86461,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -160}
-  m_SizeDelta: {x: 195.515, y: 20}
+  m_SizeDelta: {x: 70, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!23 &8362741565800057808
 MeshRenderer:
