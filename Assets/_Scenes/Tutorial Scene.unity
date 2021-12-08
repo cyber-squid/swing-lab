@@ -61327,7 +61327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -245, y: -1040}
+  m_AnchoredPosition: {x: -255, y: -1045}
   m_SizeDelta: {x: 981.834, y: 656.52234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2095395381
@@ -65091,7 +65091,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!114 &1822014912746445615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65658,7 +65658,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!222 &2096093083632273535
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -66587,7 +66587,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!114 &2322868706954854401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74179,7 +74179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -531, y: -277}
+  m_AnchoredPosition: {x: -530, y: -270}
   m_SizeDelta: {x: 827.3857, y: 515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5546090673356855587
@@ -74791,7 +74791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &5721337944742432695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74839,7 +74839,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &5721337944990072239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74904,7 +74904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5721337945136090666
 Transform:
   m_ObjectHideFlags: 0
@@ -74988,7 +74988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &5721337945751347853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75036,7 +75036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5731841922507447289
 GameObject:
   m_ObjectHideFlags: 0
@@ -79855,7 +79855,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!33 &7799098469379406892
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -86609,7 +86609,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!33 &8628755100631059418
 MeshFilter:
   m_ObjectHideFlags: 0
