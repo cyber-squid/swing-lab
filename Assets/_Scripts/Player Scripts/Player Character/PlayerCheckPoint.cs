@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class PlayerCheckPoint : MonoBehaviour
 {
-    private AIFollow aIFollow;
+    private Seek aIFollow;
     public Transform levelposition;
     public bool followPlayer;
     Vector3 spawnPoint;
     private PlayerMovementController pmc;
     public AudioSource CheckpointSound;
+    private GameObject Particle;
 
     // Start is called before the first frame update
     void Start()
     {
+        foreach (Transform child in transform)
+        {
+            if (child.tag == "Particle")
+                Particle = child.gameObject;
+        }
         pmc = FindObjectOfType<PlayerMovementController>();
-        aIFollow = FindObjectOfType<AIFollow>();
+        aIFollow = FindObjectOfType<Seek>();
         spawnPoint = gameObject.transform.position;
     }
 
@@ -25,17 +31,22 @@ public class PlayerCheckPoint : MonoBehaviour
         {
             pmc.spawnPoint = spawnPoint;
             CheckpointSound.Play();
-            Destroy(this.gameObject);
             if (followPlayer)
             {
                 aIFollow.follow = true;
-                aIFollow.goTolevelposition = false;
+                if (Particle != null)
+                {
+                    Destroy(Particle);
+                }
             }
             else
             {
                 aIFollow.follow = false;
-                aIFollow.goTolevelposition = true;
-                aIFollow.targetposition = levelposition.position;
+                aIFollow.targetposition = levelposition;
+                if (Particle != null)
+                {
+                    Destroy(Particle);
+                }
             }
         }
     }

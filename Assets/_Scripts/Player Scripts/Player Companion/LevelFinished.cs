@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class LevelFinished : MonoBehaviour
 {
-    private AIFollow aIFollow;
+    private Seek aIFollow;
 
 
     void Start()
     {
-        aIFollow = FindObjectOfType<AIFollow>();
+        aIFollow = FindObjectOfType<Seek>();
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -17,7 +17,6 @@ public class LevelFinished : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             aIFollow.follow = true;
-            aIFollow.goTolevelposition = false;
         }
     }
 }
