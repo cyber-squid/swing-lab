@@ -31,6 +31,7 @@ public class PlayerCheckPoint : MonoBehaviour
         {
             pmc.spawnPoint = spawnPoint;
             CheckpointSound.Play();
+            Destroy(this);
             if (followPlayer)
             {
                 aIFollow.follow = true;
@@ -41,6 +42,7 @@ public class PlayerCheckPoint : MonoBehaviour
             }
             else
             {
+
                 aIFollow.follow = false;
                 aIFollow.targetposition = levelposition;
                 if (Particle != null)
