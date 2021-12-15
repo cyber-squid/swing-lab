@@ -2,37 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Seek : MonoBehaviour
+public class Patrol : MonoBehaviour
 {
+    public List<Transform> waypoints;
+    public float MaxVelocity;
+    public float MaxForce;
+    public float Mass;
     Vector3 velocity;
-    public Transform player;
-    public bool follow = true;
-    public float Mass = 100;
-    public float MaxVelocity = 10;
-    public float MaxForce = 10;
-    public Transform targetposition;
+    int index = 0;
 
-    void Start()
+    private void Start()
     {
-        follow = true;
         velocity = Vector3.zero;
     }
-
     void Update()
     {
-        if (follow)
+        float distance = Vector3.Distance(transform.position, waypoints[index].position);
+
+        if (distance < 1)
         {
-            Move(player.transform);
+            StartCoroutine(WaitOnWaypoint());
         }
         else
         {
-            Move(targetposition);
+            Move(waypoints[index]);
         }
     }
 
-    private void Move(Transform target)
+    IEnumerator WaitOnWaypoint()
     {
-        Vector3 desiredVelocity = (target.transform.position + new Vector3(0, 0.4f, -4) - transform.position).normalized;
+        yield return new WaitForSeconds(2);
+        index++;
+        if (index > waypoints.Count - 1)
+        {
+            index = 0;
+        }
+        StopAllCoroutines();
+    }
+
+    public void Move(Transform target)
+    {
+        Vector3 desiredVelocity = (target.transform.position - transform.position).normalized;
         desiredVelocity = desiredVelocity.normalized * MaxVelocity;
 
         Vector3 steering = desiredVelocity - velocity;
@@ -48,4 +58,3 @@ public class Seek : MonoBehaviour
 
     }
 }
-
