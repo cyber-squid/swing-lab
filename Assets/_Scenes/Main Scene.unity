@@ -51467,7 +51467,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 42580507972809860, guid: 086135769954f6c468eb5d6bb27692b4, type: 3}
       propertyPath: m_Name
-      value: PatrolAI1 (1)
+      value: PatrolAI2
       objectReference: {fileID: 0}
     - target: {fileID: 854723040035171902, guid: 086135769954f6c468eb5d6bb27692b4, type: 3}
       propertyPath: m_RootOrder
