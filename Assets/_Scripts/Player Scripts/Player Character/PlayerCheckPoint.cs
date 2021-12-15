@@ -34,21 +34,20 @@ public class PlayerCheckPoint : MonoBehaviour
             Destroy(this);
             if (followPlayer)
             {
-                aIFollow.follow = true;
                 if (Particle != null)
                 {
                     Destroy(Particle);
                 }
+                aIFollow.follow = true;
             }
             else
             {
-
-                aIFollow.follow = false;
-                aIFollow.targetposition = levelposition;
                 if (Particle != null)
                 {
                     Destroy(Particle);
                 }
+                aIFollow.follow = false;
+                aIFollow.targetposition = levelposition;
             }
         }
     }
